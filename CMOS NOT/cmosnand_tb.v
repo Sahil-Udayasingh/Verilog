@@ -1,17 +1,17 @@
-module cmosnand_test;
+module cmosnot_test;
 
-reg in1,in2;
+reg in1;
 wire out;
 integer k;
 
-cmosnand Mynand2(out,in1,in2);
+cmosnand Mynot2(out,in1);
 
 initial
 	begin
-		for(k=0;k<4;k=k+1)
+		for(k=0;k<2;k=k+1)
 		begin
-			#5 {in1,in2} = k;
-			$display("In1: %b, In2: %b, OUT: %b",in1,in2,out);
+			#5 in1 = k;
+			$display("In1: %b, OUT: %b",in1,out);
 		end
 	end
 endmodule	
