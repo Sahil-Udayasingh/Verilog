@@ -6,3 +6,4 @@ This repo will take you through different verilog projects
 4. Pipelining example
 5. Nand using CMOS(switch level)
 6. Not using CMOS(switch level)
+7. BCD to 7-segment
