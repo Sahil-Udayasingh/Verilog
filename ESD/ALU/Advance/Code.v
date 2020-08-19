@@ -11,7 +11,7 @@ module ALU(Rtype,Itype,Y);
     assign opcode = Rtype[31:26];
     assign opcodeI = Itype[31:26];
     
-    assign func = Rtype[5:0];
+   assign func = Rtype[5:0];      /* This part will be showing error and I'm trying to rectify it*/
     assign rd = Rtype[25:21];
     assign rs = Rtype[20:16];
     assign rt = Rtype[15:21];
