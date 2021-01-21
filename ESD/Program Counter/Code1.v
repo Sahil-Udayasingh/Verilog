@@ -1,4 +1,5 @@
-module pc(out1,out,clk,reset);
+// program counter gives the address for the next instruction to be executed
+module pc(out1,out,clk,reset); 
 
   output [31 : 0] out1;
   input            clk, reset;
